@@ -1,0 +1,30 @@
+Sobre
+
+    Gefrase - Gerador de Frase Senha em Português
+    Versão 1.0 - 2025
+
+    Software de Domínio Público
+    Redistribuição Permitida
+
+    Código-Fonte Disponível em:
+    https://github.com/CientistaVuador/Gefrase
+
+Sobre o Separador, o Sufixo e a Capitalização
+    
+    Nem o separador, nem o sufixo e nem a capitalização de
+    senha são levados em conta no cálculo de força da senha, só
+    foram adicionados para satisfazer certos requerimentos de 
+    sites como letra maiúsculas, números ou caracteres 
+    especiais.
+
+    Por essa razão eles são escolhidos pelo usuário e podem
+    conter informações fáceis de lembrar como espaço ou ponto
+    no caso do separador, o ano atual ou ano de aniversário
+    para o sufixo e a primeira letra da primeira palavra em 
+    maiúsculo.
+
+FlatLaf
+    
+    Apache License 2.0
+    https://www.formdev.com/flatlaf/
+    https://github.com/JFormDesigner/FlatLaf

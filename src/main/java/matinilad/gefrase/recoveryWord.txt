@@ -1,0 +1,36 @@
+Sobre
+
+    A Palavra de recuperação permite que uma palavra de sua senha seja
+    recuperada desde que a ordem e as outras palavras estejam 
+    corretas.
+
+    A Palavra de recuperação deve ser mantida em segredo, caso ela 
+    seja revelada a sua senha perderá uma palavra de força.
+
+    Se não deseja utilizar uma palavra de recuperação, simplesmente
+    não anote ou guarde ela em nenhum lugar.
+
+Princípio de Funcionamento
+
+    O Processo de cálculo e recuperação funciona como uma equação 
+    matemática somando todas as palavras:
+    
+        p1 + p2 + p3 + p4 = pr
+
+    Como não é possível somar texto, todas as palavras usam o índice 
+    do dicionário como valor:
+
+        indice(p1) + indice(p2) + indice(p3) + indice(p4) = indice(pr)
+
+    Nos computadores utilizamos um XOR (^) ao invés de uma soma comum
+    para economizar memória, um XOR opera como uma soma de dois bits
+    mas sem carregar um bit extra e continua sendo reversível como uma
+    soma normal:
+
+        indice(p1) ^ indice(p2) ^ indice(p3) ^ indice(p4) = indice(pr)
+
+    Se qualquer um dos termos se tornarem desconhecidos ele pode ser
+    recuperado facilmente fazendo o XOR de todos os outros termos
+    conhecidos:
+
+        indice(p1) = indice(p2) ^ indice(p3) ^ indice(p4) ^ indice(pr)

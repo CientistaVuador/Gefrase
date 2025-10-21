@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="doNotSaveConfiguration">false</entry>
+    <entry key="numberOfWords">8</entry>
+    <entry key="separatorCharacter">46</entry>
+    <entry key="useRandomSuffix">true</entry>
+    <entry key="suffix"></entry>
+    <entry key="dictionary">v1</entry>
+    <entry key="capitalizationMode">1</entry>
+</properties>

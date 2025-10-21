@@ -1,0 +1,48 @@
+Sobre
+
+    O Código de Verificação permite verificar se sua senha está
+    correta sem possuí-la, isso pode ser útil para evitar 
+    bloqueios online.
+    
+    Não há limites de tentativas ou tempo de espera, tente
+    o quanto quiser até se lembrar.
+
+    O Código de Verificação deve ser preferencialmente mantido
+    em segredo, se ele for revelado ao público sua senha
+    poderá ser descoberta através da força bruta se a força
+    dela não for alta, mas devido a colisões de hash isso pode
+    não ser possível mesmo com a senha sendo fraca.
+
+Funcionamento
+    
+    O Código é simplesmente bytes em hexadecimal separados
+    por um espaço a cada dois bytes:
+
+        4817 4D4A 6ED9 6A24
+
+    Com 8 bytes no total, os primeiros 3 bytes são um salt
+    gerado aleatoriamente que é combinado com um salt
+    estático do programa:
+
+        4817 4D
+        3cdd70694419a64afc8f5703f371c4a6
+
+    Os outros 5 bytes são os primeiros 5 bytes de retorno da 
+    função PBKDF2 com 10.000 iterações:
+
+        4A 6ED9 6A24
+    
+    A Verificação é feita gerando um código com os 3 bytes
+    de salt do código inserido, se os dois códigos são iguais
+    então a senha é assumida como sendo igual.
+    
+    Como o código só possui 5 bytes de hash (40 bits de tamanho)
+    é bem possível que existam várias e várias colisões para
+    senhas diferentes mas como a senha é inserida por humanos 
+    e não máquinas é extremamente improvável que alguém
+    encontre uma colisão por acidente com poucas tentativas.
+
+    Mesmo com o salt possuindo apenas 3 bytes de tamanho (24 bits)
+    ainda seria extremamente difícil pré-computar tabelas de hash
+    até mesmo para as menores senhas (<4 palavras) devido a enorme
+    quantidade de espaço e processamento necessário.

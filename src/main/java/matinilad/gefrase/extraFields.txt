@@ -1,0 +1,7 @@
+Sobre
+    
+    A palavra de recuperação e o código de verificação podem 
+    não ter uso se não deseja memorizar a senha.
+    
+    Para mais informações veja o "Sobre" das janelas
+    "Recuperar Senha" e "Verificar Senha" em "Ferramentas".
