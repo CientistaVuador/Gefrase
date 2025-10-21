@@ -12,7 +12,7 @@ Gerador de Frase-Senha em Português<br/>
 ### Extras
 - Palavra de Recuperação (Permite recuperar uma palavra de sua senha, desde que as outras estejam corretas)
 - Código de Verificação (Verifica se a senha está correta com base em um código hash)
-## Instalação
+## Uso
 ### Windows
 1. Baixe e instale java [aqui](https://adoptium.net/pt-BR) (Versão 17 ou superior recomendada)
 2. Baixe a jar do programa na página de [releases](https://github.com/CientistaVuador/Gefrase/releases/)
