@@ -1,5 +1,5 @@
 # Gefrase
-Gerador de Frase-Senha em Português
+Gerador de Frase-Senha em Português<br/>
 <img width="700" height="300" alt="O Programa mostrando uma senha gerada" src="https://github.com/user-attachments/assets/62bb4f47-4f9b-4080-8c63-4e30a2121965" />
 ## Funções
 - Coletor de entropia próprio (opcional)
