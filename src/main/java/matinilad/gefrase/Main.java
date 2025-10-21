@@ -35,7 +35,6 @@ import java.security.DrbgParameters;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.List;
-import java.util.Map.Entry;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 
