@@ -47,6 +47,11 @@ public class Main {
     
     private static boolean portableMode = false;
     
+    /**
+     * Retorn true se o modo portátil do programa está ativado<br>
+     * O modo portátil guarda os dados na workdir ao invés da pasta do usuário
+     * @return true se o modo portátil do programa está ativado
+     */
     public static boolean isPortableModeEnabled() {
         return Main.portableMode;
     }
